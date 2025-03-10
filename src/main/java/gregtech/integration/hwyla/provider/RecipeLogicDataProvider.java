@@ -11,7 +11,6 @@ import gregtech.api.metatileentity.multiblock.RecipeMapSteamMultiblockController
 import gregtech.api.unification.material.Materials;
 import gregtech.api.util.GTUtility;
 import gregtech.api.util.TextFormattingUtil;
-import gregtech.common.metatileentities.multi.MetaTileEntityLargeBoiler;
 
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.ItemStack;
@@ -71,11 +70,6 @@ public class RecipeLogicDataProvider extends CapabilityDataProvider<AbstractReci
 
                 if (accessor.getTileEntity() instanceof IGregTechTileEntity gtte) {
                     MetaTileEntity mte = gtte.getMetaTileEntity();
-                    if (mte instanceof SteamMetaTileEntity || mte instanceof MetaTileEntityLargeBoiler ||
-                            mte instanceof RecipeMapSteamMultiblockController) {
-                        endText = ": " + TextFormattingUtil.formatNumbers(eut) + TextFormatting.RESET + " L/t " +
-                                I18n.format(Materials.Steam.getUnlocalizedName());
-                    }
                     AbstractRecipeLogic arl = mte.getRecipeLogic();
                     if (arl != null) {
                         consumer = arl.consumesEnergy();

@@ -425,39 +425,6 @@ public class MetaTileEntityLoader {
                 "PPP", "PhP", "BBB", 'P', new UnificationEntry(OrePrefix.plate, Materials.WroughtIron), 'B',
                 new ItemStack(Blocks.BRICK_BLOCK));
 
-        ModHandler.addShapedRecipe(true, "steam_boiler_coal_bronze",
-                MetaTileEntities.STEAM_BOILER_COAL_BRONZE.getStackForm(), "PPP", "PwP", "BFB", 'F',
-                OreDictNames.craftingFurnace, 'P', new UnificationEntry(OrePrefix.plate, Materials.Bronze), 'B',
-                new ItemStack(Blocks.BRICK_BLOCK));
-        ModHandler.addShapedRecipe(true, "steam_boiler_coal_steel",
-                MetaTileEntities.STEAM_BOILER_COAL_STEEL.getStackForm(), "PPP", "PwP", "BFB", 'F',
-                OreDictNames.craftingFurnace, 'P', new UnificationEntry(OrePrefix.plate, Materials.Steel), 'B',
-                new ItemStack(Blocks.BRICK_BLOCK));
-        ModHandler.addShapedRecipe(true, "steam_boiler_lava_bronze",
-                MetaTileEntities.STEAM_BOILER_LAVA_BRONZE.getStackForm(), "PPP", "PGP", "PMP", 'M',
-                MetaBlocks.STEAM_CASING.getItemVariant(BRONZE_BRICKS_HULL), 'P',
-                new UnificationEntry(OrePrefix.plate, Materials.Bronze), 'G', new ItemStack(Blocks.GLASS, 1));
-        ModHandler.addShapedRecipe(true, "steam_boiler_lava_steel",
-                MetaTileEntities.STEAM_BOILER_LAVA_STEEL.getStackForm(), "PPP", "PGP", "PMP", 'M',
-                MetaBlocks.STEAM_CASING.getItemVariant(STEEL_BRICKS_HULL), 'P',
-                new UnificationEntry(OrePrefix.plate, Materials.Steel), 'G', new ItemStack(Blocks.GLASS, 1));
-        ModHandler.addShapedRecipe(true, "steam_boiler_solar_bronze",
-                MetaTileEntities.STEAM_BOILER_SOLAR_BRONZE.getStackForm(), "GGG", "SSS", "PMP", 'M',
-                MetaBlocks.STEAM_CASING.getItemVariant(BRONZE_BRICKS_HULL), 'P',
-                new UnificationEntry(OrePrefix.pipeSmallFluid, Materials.Bronze), 'S',
-                new UnificationEntry(OrePrefix.plate, Materials.Silver), 'G', new ItemStack(Blocks.GLASS));
-        ModHandler.addShapedRecipe(true, "steam_boiler_solar_steel",
-                MetaTileEntities.STEAM_BOILER_SOLAR_STEEL.getStackForm(), "GGG", "SSS", "PMP", 'M',
-                MetaBlocks.STEAM_CASING.getItemVariant(STEEL_BRICKS_HULL), 'P',
-                new UnificationEntry(OrePrefix.pipeSmallFluid, Materials.Steel), 'S',
-                new UnificationEntry(OrePrefix.plateDouble, Materials.Silver), 'G', new ItemStack(Blocks.GLASS));
-
-        ModHandler.addShapedRecipe(true, "steam_miner", MetaTileEntities.STEAM_MINER.getStackForm(), "DSD", "SMS",
-                "GSG", 'M', MetaBlocks.STEAM_CASING.getItemVariant(BRONZE_HULL), 'S',
-                new UnificationEntry(OrePrefix.pipeNormalFluid, Materials.Bronze), 'D',
-                new UnificationEntry(OrePrefix.gem, Materials.Diamond), 'G',
-                new UnificationEntry(OrePrefix.gearSmall, Materials.Bronze));
-
         // MULTI BLOCK CONTROLLERS
         ModHandler.addShapedRecipe(true, "bronze_primitive_blast_furnace",
                 MetaTileEntities.PRIMITIVE_BLAST_FURNACE.getStackForm(), "hRS", "PBR", "dRS", 'R',
@@ -537,24 +504,6 @@ public class MetaTileEntityLoader {
                 new UnificationEntry(OrePrefix.circuit, MarkerMaterials.Tier.LuV), 'A',
                 MetaTileEntities.HULL[GTValues.LuV].getStackForm(), 'C',
                 new UnificationEntry(OrePrefix.pipeLargeFluid, Materials.TungstenSteel));
-
-        ModHandler.addShapedRecipe(true, "large_bronze_boiler", MetaTileEntities.LARGE_BRONZE_BOILER.getStackForm(),
-                "PSP", "SAS", "PSP", 'P', new UnificationEntry(OrePrefix.cableGtSingle, Materials.Tin), 'S',
-                new UnificationEntry(OrePrefix.circuit, MarkerMaterials.Tier.LV), 'A',
-                MetaBlocks.BOILER_FIREBOX_CASING.getItemVariant(BRONZE_FIREBOX));
-        ModHandler.addShapedRecipe(true, "large_steel_boiler", MetaTileEntities.LARGE_STEEL_BOILER.getStackForm(),
-                "PSP", "SAS", "PSP", 'P', new UnificationEntry(OrePrefix.cableGtSingle, Materials.Copper), 'S',
-                new UnificationEntry(OrePrefix.circuit, MarkerMaterials.Tier.HV), 'A',
-                MetaBlocks.BOILER_FIREBOX_CASING.getItemVariant(STEEL_FIREBOX));
-        ModHandler.addShapedRecipe(true, "large_titanium_boiler", MetaTileEntities.LARGE_TITANIUM_BOILER.getStackForm(),
-                "PSP", "SAS", "PSP", 'P', new UnificationEntry(OrePrefix.cableGtSingle, Materials.Gold), 'S',
-                new UnificationEntry(OrePrefix.circuit, MarkerMaterials.Tier.EV), 'A',
-                MetaBlocks.BOILER_FIREBOX_CASING.getItemVariant(TITANIUM_FIREBOX));
-        ModHandler.addShapedRecipe(true, "large_tungstensteel_boiler",
-                MetaTileEntities.LARGE_TUNGSTENSTEEL_BOILER.getStackForm(), "PSP", "SAS", "PSP", 'P',
-                new UnificationEntry(OrePrefix.cableGtSingle, Materials.Aluminium), 'S',
-                new UnificationEntry(OrePrefix.circuit, MarkerMaterials.Tier.IV), 'A',
-                MetaBlocks.BOILER_FIREBOX_CASING.getItemVariant(TUNGSTENSTEEL_FIREBOX));
 
         ModHandler.addShapedRecipe(true, "assembly_line", MetaTileEntities.ASSEMBLY_LINE.getStackForm(), "CRC", "SAS",
                 "CRC", 'A', MetaTileEntities.HULL[GTValues.IV].getStackForm(), 'R', MetaItems.ROBOT_ARM_IV, 'C',

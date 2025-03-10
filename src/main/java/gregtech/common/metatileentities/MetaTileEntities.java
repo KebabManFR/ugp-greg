@@ -40,10 +40,8 @@ import gregtech.common.metatileentities.electric.MetaTileEntitySingleTurbine;
 import gregtech.common.metatileentities.electric.MetaTileEntityTransformer;
 import gregtech.common.metatileentities.electric.MetaTileEntityWorldAccelerator;
 import gregtech.common.metatileentities.electric.SimpleMachineMetaTileEntityResizable;
-import gregtech.common.metatileentities.multi.BoilerType;
 import gregtech.common.metatileentities.multi.MetaTileEntityCokeOven;
 import gregtech.common.metatileentities.multi.MetaTileEntityCokeOvenHatch;
-import gregtech.common.metatileentities.multi.MetaTileEntityLargeBoiler;
 import gregtech.common.metatileentities.multi.MetaTileEntityMultiblockTank;
 import gregtech.common.metatileentities.multi.MetaTileEntityPrimitiveBlastFurnace;
 import gregtech.common.metatileentities.multi.MetaTileEntityPrimitiveWaterPump;
@@ -102,15 +100,7 @@ import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntity
 import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntityHPCAComputation;
 import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntityHPCACooler;
 import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntityHPCAEmpty;
-import gregtech.common.metatileentities.multi.steam.MetaTileEntitySteamGrinder;
-import gregtech.common.metatileentities.multi.steam.MetaTileEntitySteamOven;
 import gregtech.common.metatileentities.primitive.MetaTileEntityCharcoalPileIgniter;
-import gregtech.common.metatileentities.steam.SteamMiner;
-import gregtech.common.metatileentities.steam.boiler.SteamCoalBoiler;
-import gregtech.common.metatileentities.steam.boiler.SteamLavaBoiler;
-import gregtech.common.metatileentities.steam.boiler.SteamSolarBoiler;
-import gregtech.common.metatileentities.steam.multiblockpart.MetaTileEntitySteamHatch;
-import gregtech.common.metatileentities.steam.multiblockpart.MetaTileEntitySteamItemBus;
 import gregtech.common.metatileentities.storage.MetaTileEntityBuffer;
 import gregtech.common.metatileentities.storage.MetaTileEntityCrate;
 import gregtech.common.metatileentities.storage.MetaTileEntityCreativeChest;
@@ -260,20 +250,10 @@ public class MetaTileEntities {
     private static final Map<String, Boolean> HIGH_TIER = new HashMap<>();
 
     // STEAM AGE SECTION
-    public static SteamCoalBoiler STEAM_BOILER_COAL_BRONZE;
-    public static SteamCoalBoiler STEAM_BOILER_COAL_STEEL;
-    public static SteamSolarBoiler STEAM_BOILER_SOLAR_BRONZE;
-    public static SteamSolarBoiler STEAM_BOILER_SOLAR_STEEL;
-    public static SteamLavaBoiler STEAM_BOILER_LAVA_BRONZE;
-    public static SteamLavaBoiler STEAM_BOILER_LAVA_STEEL;
-    public static SteamMiner STEAM_MINER;
     public static MetaTileEntityPumpHatch PUMP_OUTPUT_HATCH;
     public static MetaTileEntityPrimitiveWaterPump PRIMITIVE_WATER_PUMP;
     public static MetaTileEntityMagicEnergyAbsorber MAGIC_ENERGY_ABSORBER;
     public static MetaTileEntityCokeOvenHatch COKE_OVEN_HATCH;
-    public static MetaTileEntitySteamItemBus STEAM_EXPORT_BUS;
-    public static MetaTileEntitySteamItemBus STEAM_IMPORT_BUS;
-    public static MetaTileEntitySteamHatch STEAM_HATCH;
     public static MetaTileEntityMaintenanceHatch MAINTENANCE_HATCH;
     public static MetaTileEntityMaintenanceHatch CONFIGURABLE_MAINTENANCE_HATCH;
     public static MetaTileEntityAutoMaintenanceHatch AUTO_MAINTENANCE_HATCH;
@@ -294,14 +274,8 @@ public class MetaTileEntities {
     public static MetaTileEntityLargeTurbine LARGE_STEAM_TURBINE;
     public static MetaTileEntityLargeTurbine LARGE_GAS_TURBINE;
     public static MetaTileEntityLargeTurbine LARGE_PLASMA_TURBINE;
-    public static MetaTileEntityLargeBoiler LARGE_BRONZE_BOILER;
-    public static MetaTileEntityLargeBoiler LARGE_STEEL_BOILER;
-    public static MetaTileEntityLargeBoiler LARGE_TITANIUM_BOILER;
-    public static MetaTileEntityLargeBoiler LARGE_TUNGSTENSTEEL_BOILER;
     public static MetaTileEntityAssemblyLine ASSEMBLY_LINE;
     public static MetaTileEntityLargeChemicalReactor LARGE_CHEMICAL_REACTOR;
-    public static MetaTileEntitySteamOven STEAM_OVEN;
-    public static MetaTileEntitySteamGrinder STEAM_GRINDER;
     public static MetaTileEntityLargeMiner BASIC_LARGE_MINER;
     public static MetaTileEntityLargeMiner LARGE_MINER;
     public static MetaTileEntityLargeMiner ADVANCED_LARGE_MINER;
@@ -365,23 +339,6 @@ public class MetaTileEntities {
 
     public static void init() {
         GTLog.logger.info("Registering MetaTileEntities");
-
-        STEAM_BOILER_COAL_BRONZE = registerMetaTileEntity(1,
-                new SteamCoalBoiler(gregtechId("steam_boiler_coal_bronze"), false));
-        STEAM_BOILER_COAL_STEEL = registerMetaTileEntity(2,
-                new SteamCoalBoiler(gregtechId("steam_boiler_coal_steel"), true));
-
-        STEAM_BOILER_SOLAR_BRONZE = registerMetaTileEntity(3,
-                new SteamSolarBoiler(gregtechId("steam_boiler_solar_bronze"), false));
-        STEAM_BOILER_SOLAR_STEEL = registerMetaTileEntity(4,
-                new SteamSolarBoiler(gregtechId("steam_boiler_solar_steel"), true));
-
-        STEAM_BOILER_LAVA_BRONZE = registerMetaTileEntity(5,
-                new SteamLavaBoiler(gregtechId("steam_boiler_lava_bronze"), false));
-        STEAM_BOILER_LAVA_STEEL = registerMetaTileEntity(6,
-                new SteamLavaBoiler(gregtechId("steam_boiler_lava_steel"), true));
-
-        STEAM_MINER = registerMetaTileEntity(21, new SteamMiner(gregtechId("steam_miner"), 320, 4, 0));
 
         // Electric Furnace, IDs 50-64
         registerSimpleMetaTileEntity(ELECTRIC_FURNACE, 50, "electric_furnace", RecipeMaps.FURNACE_RECIPES,
@@ -666,15 +623,6 @@ public class MetaTileEntities {
                         MetaBlocks.TURBINE_CASING.getState(BlockTurbineCasing.TurbineCasingType.TUNGSTENSTEEL_GEARBOX),
                         Textures.ROBUST_TUNGSTENSTEEL_CASING, false, Textures.LARGE_PLASMA_TURBINE_OVERLAY));
 
-        LARGE_BRONZE_BOILER = registerMetaTileEntity(1013,
-                new MetaTileEntityLargeBoiler(gregtechId("large_boiler.bronze"), BoilerType.BRONZE));
-        LARGE_STEEL_BOILER = registerMetaTileEntity(1014,
-                new MetaTileEntityLargeBoiler(gregtechId("large_boiler.steel"), BoilerType.STEEL));
-        LARGE_TITANIUM_BOILER = registerMetaTileEntity(1015,
-                new MetaTileEntityLargeBoiler(gregtechId("large_boiler.titanium"), BoilerType.TITANIUM));
-        LARGE_TUNGSTENSTEEL_BOILER = registerMetaTileEntity(1016,
-                new MetaTileEntityLargeBoiler(gregtechId("large_boiler.tungstensteel"), BoilerType.TUNGSTENSTEEL));
-
         COKE_OVEN = registerMetaTileEntity(1017, new MetaTileEntityCokeOven(gregtechId("coke_oven")));
         COKE_OVEN_HATCH = registerMetaTileEntity(1018, new MetaTileEntityCokeOvenHatch(gregtechId("coke_oven_hatch")));
 
@@ -688,9 +636,6 @@ public class MetaTileEntities {
 
         LARGE_CHEMICAL_REACTOR = registerMetaTileEntity(1023,
                 new MetaTileEntityLargeChemicalReactor(gregtechId("large_chemical_reactor")));
-
-        STEAM_OVEN = registerMetaTileEntity(1024, new MetaTileEntitySteamOven(gregtechId("steam_oven")));
-        STEAM_GRINDER = registerMetaTileEntity(1025, new MetaTileEntitySteamGrinder(gregtechId("steam_grinder")));
 
         BASIC_LARGE_MINER = registerMetaTileEntity(1026,
                 new MetaTileEntityLargeMiner(gregtechId("large_miner.ev"), GTValues.EV, 16, 3, 4, Materials.Steel, 8));
@@ -1054,11 +999,6 @@ public class MetaTileEntities {
 
         CREATIVE_ENERGY = registerMetaTileEntity(1650, new MetaTileEntityCreativeEnergy());
         // Steam Hatches/Buses
-        STEAM_EXPORT_BUS = registerMetaTileEntity(1651,
-                new MetaTileEntitySteamItemBus(gregtechId("steam_export_bus"), true));
-        STEAM_IMPORT_BUS = registerMetaTileEntity(1652,
-                new MetaTileEntitySteamItemBus(gregtechId("steam_import_bus"), false));
-        STEAM_HATCH = registerMetaTileEntity(1653, new MetaTileEntitySteamHatch(gregtechId("steam_hatch")));
 
         // Maintenance Hatches, IDs 1654-1656
         MAINTENANCE_HATCH = registerMetaTileEntity(1654,

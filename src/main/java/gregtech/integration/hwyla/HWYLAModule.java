@@ -18,7 +18,6 @@ import gregtech.integration.hwyla.provider.MultiblockDataProvider;
 import gregtech.integration.hwyla.provider.PrimitivePumpDataProvider;
 import gregtech.integration.hwyla.provider.QuantumStorageProvider;
 import gregtech.integration.hwyla.provider.RecipeLogicDataProvider;
-import gregtech.integration.hwyla.provider.SteamBoilerDataProvider;
 import gregtech.integration.hwyla.provider.TransformerDataProvider;
 import gregtech.integration.hwyla.provider.WorkableDataProvider;
 import gregtech.modules.GregTechModules;
@@ -51,7 +50,6 @@ public class HWYLAModule extends IntegrationSubmodule implements IWailaPlugin {
         MultiRecipeMapDataProvider.INSTANCE.register(registrar);
         ConverterDataProvider.INSTANCE.register(registrar);
         RecipeLogicDataProvider.INSTANCE.register(registrar);
-        SteamBoilerDataProvider.INSTANCE.register(registrar);
         PrimitivePumpDataProvider.INSTANCE.register(registrar);
         // one day, if cover provider is ported to waila, register it right here
         BlockOreDataProvider.INSTANCE.register(registrar);

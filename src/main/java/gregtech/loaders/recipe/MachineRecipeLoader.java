@@ -1462,15 +1462,5 @@ public class MachineRecipeLoader {
             ModHandler.addShapedRecipe("me_item_bus_input_to_output", ITEM_EXPORT_BUS_ME.getStackForm(), "d", "B", 'B',
                     ITEM_IMPORT_BUS_ME.getStackForm());
         }
-
-        if (STEAM_EXPORT_BUS != null && STEAM_IMPORT_BUS != null) {
-            // Steam
-            ModHandler.addShapedRecipe("steam_bus_output_to_input_" + STEAM_EXPORT_BUS.getTier(),
-                    STEAM_EXPORT_BUS.getStackForm(),
-                    "d", "B", 'B', STEAM_IMPORT_BUS.getStackForm());
-            ModHandler.addShapedRecipe("steam_bus_input_to_output_" + STEAM_IMPORT_BUS.getTier(),
-                    STEAM_IMPORT_BUS.getStackForm(),
-                    "d", "B", 'B', STEAM_EXPORT_BUS.getStackForm());
-        }
     }
 }

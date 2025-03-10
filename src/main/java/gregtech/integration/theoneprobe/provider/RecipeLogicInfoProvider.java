@@ -11,7 +11,6 @@ import gregtech.api.metatileentity.multiblock.RecipeMapSteamMultiblockController
 import gregtech.api.unification.material.Materials;
 import gregtech.api.util.GTUtility;
 import gregtech.api.util.TextFormattingUtil;
-import gregtech.common.metatileentities.multi.MetaTileEntityLargeBoiler;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
@@ -51,12 +50,6 @@ public class RecipeLogicInfoProvider extends CapabilityInfoProvider<AbstractReci
             if (tileEntity instanceof IGregTechTileEntity) {
                 IGregTechTileEntity gtTileEntity = (IGregTechTileEntity) tileEntity;
                 MetaTileEntity mte = gtTileEntity.getMetaTileEntity();
-                if (mte instanceof SteamMetaTileEntity || mte instanceof MetaTileEntityLargeBoiler ||
-                        mte instanceof RecipeMapSteamMultiblockController) {
-                    text = TextFormatting.AQUA + TextFormattingUtil.formatNumbers(eut) +
-                            TextStyleClass.INFO + " L/t {*" +
-                            Materials.Steam.getUnlocalizedName() + "*}";
-                }
             }
             if (text == null) {
                 // Default behavior, if this TE is not a steam machine (or somehow not instanceof
