@@ -6,7 +6,7 @@
   "max_height": 80,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "quartzite"
+    "material": "nether_quartz"
   },
   "dimension_filter": [
     "is_nether"
@@ -31,7 +31,7 @@
         "between": "ore:nether_quartz"
       },
       {
-        "sporadic": "ore:quartzite"
+        "sporadic": "ore:nether_quartz"
       }
     ]
   }

@@ -6,7 +6,7 @@
   "max_height": 120,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "barite"
+    "material": "certus_quartz"
   },
   "dimension_filter": [
     "is_nether"
@@ -22,7 +22,7 @@
     "type": "layered",
     "values": [
       {
-        "primary": "ore:quartzite"
+        "primary": "ore:certus_quartz"
       },
       {
         "secondary": "ore:certus_quartz"
@@ -31,7 +31,7 @@
         "between": "ore:certus_quartz"
       },
       {
-        "sporadic": "ore:barite"
+        "sporadic": "ore:certus_quartz"
       }
     ]
   }

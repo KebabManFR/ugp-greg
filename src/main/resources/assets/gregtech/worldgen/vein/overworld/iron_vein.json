@@ -2,11 +2,11 @@
   "name": "gregtech.veins.ore.iron",
   "weight": 120,
   "density": 0.2,
-  "max_height": 40,
-  "min_height": 10,
+  "max_height": 50,
+  "min_height": 20,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "banded_iron"
+    "material": "iron"
   },
   "generator": {
     "type": "layered",
@@ -19,16 +19,16 @@
     "type": "layered",
     "values": [
       {
-        "primary": "ore:brown_limonite"
+        "primary": "ore:iron"
       },
       {
-        "secondary": "ore:yellow_limonite"
+        "secondary": "ore:iron"
       },
       {
-        "between": "ore:banded_iron"
+        "between": "ore:iron"
       },
       {
-        "sporadic": "ore:malachite"
+        "sporadic": "ore:iron"
       }
     ]
   }

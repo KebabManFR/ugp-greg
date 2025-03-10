@@ -1,5 +1,5 @@
 {
-  "name": "gregtech.veins.ore.pitchblende",
+  "name": "gregtech.veins.ore.uraninite",
   "weight": 20,
   "density": 0.25,
   "min_height": 30,
@@ -22,10 +22,10 @@
     "type": "layered",
     "values": [
       {
-        "primary": "ore:pitchblende"
+        "primary": "ore:uraninite"
       },
       {
-        "secondary": "ore:pitchblende"
+        "secondary": "ore:uraninite"
       },
       {
         "between": "ore:uraninite"

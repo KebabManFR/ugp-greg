@@ -19,16 +19,16 @@
     "type": "layered",
     "values": [
       {
-        "primary": "ore:garnierite"
+        "primary": "ore:nickel"
       },
       {
         "secondary": "ore:nickel"
       },
       {
-        "between": "ore:cobaltite"
+        "between": "ore:nickel"
       },
       {
-        "sporadic": "ore:pentlandite"
+        "sporadic": "ore:nickel"
       }
     ]
   }

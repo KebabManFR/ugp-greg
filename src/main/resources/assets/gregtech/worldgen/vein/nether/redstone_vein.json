@@ -28,10 +28,10 @@
         "secondary": "ore:redstone"
       },
       {
-        "between": "ore:ruby"
+        "between": "ore:redstone"
       },
       {
-        "sporadic": "ore:cinnabar"
+        "sporadic": "ore:redstone"
       }
     ]
   }

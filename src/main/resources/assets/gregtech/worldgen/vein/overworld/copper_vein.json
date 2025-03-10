@@ -19,13 +19,13 @@
     "type": "layered",
     "values": [
       {
-        "primary": "ore:chalcopyrite"
+        "primary": "ore:copper"
       },
       {
-        "secondary": "ore:iron"
+        "secondary": "ore:copper"
       },
       {
-        "between": "ore:pyrite"
+        "between": "ore:copper"
       },
       {
         "sporadic": "ore:copper"

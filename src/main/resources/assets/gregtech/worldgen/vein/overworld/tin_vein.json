@@ -1,16 +1,13 @@
 {
-  "name": "gregtech.veins.ore.scheelite",
-  "weight": 20,
+  "name": "gregtech.veins.ore.tin",
+  "weight": 80,
   "density": 0.2,
-  "min_height": 20,
   "max_height": 60,
+  "min_height": 40,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "lithium"
+    "material": "tin"
   },
-  "dimension_filter": [
-    "name:the_end"
-  ],
   "generator": {
     "type": "layered",
     "radius": [
@@ -22,16 +19,16 @@
     "type": "layered",
     "values": [
       {
-        "primary": "ore:scheelite"
+        "primary": "ore:tin"
       },
       {
-        "secondary": "ore:scheelite"
+        "secondary": "ore:tin"
       },
       {
-        "between": "ore:tungstate"
+        "between": "ore:tin"
       },
       {
-        "sporadic": "ore:lithium"
+        "sporadic": "ore:tin"
       }
     ]
   }

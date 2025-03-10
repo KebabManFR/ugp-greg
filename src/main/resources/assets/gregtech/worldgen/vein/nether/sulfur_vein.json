@@ -6,7 +6,7 @@
   "max_height": 30,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "sphalerite"
+    "material": "sulfur"
   },
   "dimension_filter": [
     "is_nether"
@@ -28,10 +28,10 @@
         "secondary": "ore:sulfur"
       },
       {
-        "between": "ore:pyrite"
+        "between": "ore:sulfur"
       },
       {
-        "sporadic": "ore:sphalerite"
+        "sporadic": "ore:sulfur"
       }
     ]
   }
