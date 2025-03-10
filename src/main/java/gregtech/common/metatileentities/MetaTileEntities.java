@@ -105,14 +105,7 @@ import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntity
 import gregtech.common.metatileentities.multi.steam.MetaTileEntitySteamGrinder;
 import gregtech.common.metatileentities.multi.steam.MetaTileEntitySteamOven;
 import gregtech.common.metatileentities.primitive.MetaTileEntityCharcoalPileIgniter;
-import gregtech.common.metatileentities.steam.SteamAlloySmelter;
-import gregtech.common.metatileentities.steam.SteamCompressor;
-import gregtech.common.metatileentities.steam.SteamExtractor;
-import gregtech.common.metatileentities.steam.SteamFurnace;
-import gregtech.common.metatileentities.steam.SteamHammer;
-import gregtech.common.metatileentities.steam.SteamMacerator;
 import gregtech.common.metatileentities.steam.SteamMiner;
-import gregtech.common.metatileentities.steam.SteamRockBreaker;
 import gregtech.common.metatileentities.steam.boiler.SteamCoalBoiler;
 import gregtech.common.metatileentities.steam.boiler.SteamLavaBoiler;
 import gregtech.common.metatileentities.steam.boiler.SteamSolarBoiler;
@@ -273,20 +266,6 @@ public class MetaTileEntities {
     public static SteamSolarBoiler STEAM_BOILER_SOLAR_STEEL;
     public static SteamLavaBoiler STEAM_BOILER_LAVA_BRONZE;
     public static SteamLavaBoiler STEAM_BOILER_LAVA_STEEL;
-    public static SteamExtractor STEAM_EXTRACTOR_BRONZE;
-    public static SteamExtractor STEAM_EXTRACTOR_STEEL;
-    public static SteamMacerator STEAM_MACERATOR_BRONZE;
-    public static SteamMacerator STEAM_MACERATOR_STEEL;
-    public static SteamCompressor STEAM_COMPRESSOR_BRONZE;
-    public static SteamCompressor STEAM_COMPRESSOR_STEEL;
-    public static SteamHammer STEAM_HAMMER_BRONZE;
-    public static SteamHammer STEAM_HAMMER_STEEL;
-    public static SteamFurnace STEAM_FURNACE_BRONZE;
-    public static SteamFurnace STEAM_FURNACE_STEEL;
-    public static SteamAlloySmelter STEAM_ALLOY_SMELTER_BRONZE;
-    public static SteamAlloySmelter STEAM_ALLOY_SMELTER_STEEL;
-    public static SteamRockBreaker STEAM_ROCK_BREAKER_BRONZE;
-    public static SteamRockBreaker STEAM_ROCK_BREAKER_STEEL;
     public static SteamMiner STEAM_MINER;
     public static MetaTileEntityPumpHatch PUMP_OUTPUT_HATCH;
     public static MetaTileEntityPrimitiveWaterPump PRIMITIVE_WATER_PUMP;
@@ -401,37 +380,6 @@ public class MetaTileEntities {
                 new SteamLavaBoiler(gregtechId("steam_boiler_lava_bronze"), false));
         STEAM_BOILER_LAVA_STEEL = registerMetaTileEntity(6,
                 new SteamLavaBoiler(gregtechId("steam_boiler_lava_steel"), true));
-
-        STEAM_EXTRACTOR_BRONZE = registerMetaTileEntity(7,
-                new SteamExtractor(gregtechId("steam_extractor_bronze"), false));
-        STEAM_EXTRACTOR_STEEL = registerMetaTileEntity(8,
-                new SteamExtractor(gregtechId("steam_extractor_steel"), true));
-
-        STEAM_MACERATOR_BRONZE = registerMetaTileEntity(9,
-                new SteamMacerator(gregtechId("steam_macerator_bronze"), false));
-        STEAM_MACERATOR_STEEL = registerMetaTileEntity(10,
-                new SteamMacerator(gregtechId("steam_macerator_steel"), true));
-
-        STEAM_COMPRESSOR_BRONZE = registerMetaTileEntity(11,
-                new SteamCompressor(gregtechId("steam_compressor_bronze"), false));
-        STEAM_COMPRESSOR_STEEL = registerMetaTileEntity(12,
-                new SteamCompressor(gregtechId("steam_compressor_steel"), true));
-
-        STEAM_HAMMER_BRONZE = registerMetaTileEntity(13, new SteamHammer(gregtechId("steam_hammer_bronze"), false));
-        STEAM_HAMMER_STEEL = registerMetaTileEntity(14, new SteamHammer(gregtechId("steam_hammer_steel"), true));
-
-        STEAM_FURNACE_BRONZE = registerMetaTileEntity(15, new SteamFurnace(gregtechId("steam_furnace_bronze"), false));
-        STEAM_FURNACE_STEEL = registerMetaTileEntity(16, new SteamFurnace(gregtechId("steam_furnace_steel"), true));
-
-        STEAM_ALLOY_SMELTER_BRONZE = registerMetaTileEntity(17,
-                new SteamAlloySmelter(gregtechId("steam_alloy_smelter_bronze"), false));
-        STEAM_ALLOY_SMELTER_STEEL = registerMetaTileEntity(18,
-                new SteamAlloySmelter(gregtechId("steam_alloy_smelter_steel"), true));
-
-        STEAM_ROCK_BREAKER_BRONZE = registerMetaTileEntity(19,
-                new SteamRockBreaker(gregtechId("steam_rock_breaker_bronze"), false));
-        STEAM_ROCK_BREAKER_STEEL = registerMetaTileEntity(20,
-                new SteamRockBreaker(gregtechId("steam_rock_breaker_steel"), true));
 
         STEAM_MINER = registerMetaTileEntity(21, new SteamMiner(gregtechId("steam_miner"), 320, 4, 0));
 
