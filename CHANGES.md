@@ -11,6 +11,8 @@
 - [2 - New Content](#2---new-content)
 
 - [3 - Removed Content](#3---removed-content)
+  
+- [4 - Changed Content](#4---changed-content)
 
 ## Overview
 
@@ -22,3 +24,5 @@ This changelog is a way to track the progress of GTCEu-UGP.
 
 ## [3 - Removed Content](#table-of-contents)
 - Removed Steam Age machines
+
+## [4 - Changed Content](#table-of-contents)
