@@ -100,7 +100,6 @@ import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntity
 import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntityHPCAComputation;
 import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntityHPCACooler;
 import gregtech.common.metatileentities.multi.multiblockpart.hpca.MetaTileEntityHPCAEmpty;
-import gregtech.common.metatileentities.primitive.MetaTileEntityCharcoalPileIgniter;
 import gregtech.common.metatileentities.storage.MetaTileEntityBuffer;
 import gregtech.common.metatileentities.storage.MetaTileEntityCrate;
 import gregtech.common.metatileentities.storage.MetaTileEntityCreativeChest;
@@ -285,7 +284,6 @@ public class MetaTileEntities {
     public static MetaTileEntityFluidDrill FLUID_DRILLING_RIG;
     public static MetaTileEntityFluidDrill ADVANCED_FLUID_DRILLING_RIG;
     public static MetaTileEntityCleanroom CLEANROOM;
-    public static MetaTileEntityCharcoalPileIgniter CHARCOAL_PILE_IGNITER;
     public static MetaTileEntityDataBank DATA_BANK;
     public static MetaTileEntityResearchStation RESEARCH_STATION;
     public static MetaTileEntityHPCA HIGH_PERFORMANCE_COMPUTING_ARRAY;
@@ -659,9 +657,6 @@ public class MetaTileEntities {
                 new MetaTileEntityFluidDrill(gregtechId("fluid_drilling_rig.ev"), 4));
 
         CLEANROOM = registerMetaTileEntity(1035, new MetaTileEntityCleanroom(gregtechId("cleanroom")));
-
-        CHARCOAL_PILE_IGNITER = registerMetaTileEntity(1036,
-                new MetaTileEntityCharcoalPileIgniter(gregtechId("charcoal_pile")));
 
         DATA_BANK = registerMetaTileEntity(1037, new MetaTileEntityDataBank(gregtechId("data_bank")));
         RESEARCH_STATION = registerMetaTileEntity(1038,

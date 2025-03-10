@@ -408,11 +408,6 @@ public class MetaTileEntityLoader {
                 MetaTileEntities.HULL[GTValues.HV].getStackForm(), 'S',
                 MetaBlocks.TRANSPARENT_CASING.getItemVariant(BlockGlassCasing.CasingType.TEMPERED_GLASS));
 
-        ModHandler.addShapedRecipe(true, "charcoal_pile_igniter", MetaTileEntities.CHARCOAL_PILE_IGNITER.getStackForm(),
-                "ERE", "EHE", "FFF", 'E', new UnificationEntry(OrePrefix.plate, Materials.Bronze), 'R',
-                new UnificationEntry(OrePrefix.rotor, Materials.Iron), 'H',
-                MetaBlocks.STEAM_CASING.getItemVariant(BRONZE_BRICKS_HULL), 'F', new ItemStack(Items.FLINT));
-
         // STEAM MACHINES
         ModHandler.addShapedRecipe(true, "bronze_hull", MetaBlocks.STEAM_CASING.getItemVariant(BRONZE_HULL), "PPP",
                 "PhP", "PPP", 'P', new UnificationEntry(OrePrefix.plate, Materials.Bronze));
