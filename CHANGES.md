@@ -26,3 +26,4 @@ This changelog is a way to track the progress of GTCEu-UGP.
 - Removed Steam Age machines
 
 ## [4 - Changed Content](#table-of-contents)
+- Ore veins now feature one type of ore.
