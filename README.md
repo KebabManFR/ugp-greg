@@ -15,7 +15,10 @@ All of which are powered by GTCEu's own power systems, featuring generators from
 ## Contribution
 ### Current state of project
 GTCEu-UGP is still being developed.
-Currently changing: Removing the Steam Age machines.
+
+The differences between GTCEu and GTCEu-UGP are in the CHANGES file.
+
+Currently doing: Simplifying Ore Veins.
 
 ## Credited Works
 Heating Coil Textures, Wooden Forms, World Accelerators, and the Extreme Combustion Engine are from the **[GregTech: New Horizons Modpack](https://www.curseforge.com/minecraft/modpacks/gt-new-horizons)**.
