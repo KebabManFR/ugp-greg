@@ -99,7 +99,7 @@ public class FirstDegreeMaterials {
                 .ingot()
                 .liquid(new FluidBuilder().temperature(1357))
                 .color(0xFF8000).iconSet(METALLIC)
-                .flags(EXT2_METAL, MORTAR_GRINDABLE, GENERATE_ROTOR, GENERATE_FRAME, GENERATE_SMALL_GEAR,
+                .flags(EXT2_METAL, MORTAR_GRINDABLE, GENERATE_ROTOR, GENERATE_SMALL_GEAR,
                         GENERATE_FOIL, GENERATE_GEAR, GENERATE_DOUBLE_PLATE)
                 .components(Tin, 1, Copper, 3)
                 .toolStats(MaterialToolProperty.Builder.of(3.0F, 2.0F, 192, 2)

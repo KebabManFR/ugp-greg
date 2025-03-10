@@ -21,13 +21,6 @@ public class AssemblerRecipeLoader {
 
     public static void init() {
         // Gearbox-like
-        ASSEMBLER_RECIPES.recipeBuilder()
-                .input(plate, Bronze, 4)
-                .input(gear, Bronze, 2)
-                .input(frameGt, Bronze)
-                .circuitMeta(4)
-                .outputs(TURBINE_CASING.getItemVariant(BRONZE_GEARBOX, ConfigHolder.recipes.casingsPerCraft))
-                .duration(50).EUt(16).buildAndRegister();
 
         ASSEMBLER_RECIPES.recipeBuilder()
                 .input(plate, Steel, 4)

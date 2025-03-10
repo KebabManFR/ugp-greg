@@ -29,7 +29,7 @@ public class BlockSteamCasing extends VariantBlock<BlockSteamCasing.SteamCasingT
         setHardness(4.0f);
         setResistance(8.0f);
         setSoundType(SoundType.METAL);
-        setDefaultState(getState(SteamCasingType.BRONZE_HULL));
+        setDefaultState(getState(SteamCasingType.WOOD_WALL));
     }
 
     @Override
@@ -41,22 +41,11 @@ public class BlockSteamCasing extends VariantBlock<BlockSteamCasing.SteamCasingT
     @Override
     public void addInformation(@NotNull ItemStack stack, @Nullable World player, @NotNull List<String> tooltip,
                                @NotNull ITooltipFlag advanced) {
-        int ordinal = getState(stack).ordinal();
-        if (ordinal < 2) {
-            tooltip.add(I18n.format("tile.steam_casing.bronze.tooltip"));
-        } else if (ordinal < 4) {
-            tooltip.add(I18n.format("tile.steam_casing.steel.tooltip"));
-        } else {
-            super.addInformation(stack, player, tooltip, advanced);
-        }
+        super.addInformation(stack, player, tooltip, advanced);
     }
 
     public enum SteamCasingType implements IStringSerializable, IStateHarvestLevel {
 
-        BRONZE_HULL("bronze_hull", 1),
-        BRONZE_BRICKS_HULL("bronze_bricks_hull", 1),
-        STEEL_HULL("steel_hull", 2),
-        STEEL_BRICKS_HULL("steel_bricks_hull", 2),
         PUMP_DECK("pump_deck", 1),
         WOOD_WALL("wood_wall", 0);
 

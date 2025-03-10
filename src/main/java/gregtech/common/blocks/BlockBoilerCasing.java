@@ -22,7 +22,7 @@ public class BlockBoilerCasing extends VariantBlock<BlockBoilerCasing.BoilerCasi
         setHardness(5.0f);
         setResistance(10.0f);
         setSoundType(SoundType.METAL);
-        setDefaultState(getState(BoilerCasingType.BRONZE_PIPE));
+        setDefaultState(getState(BoilerCasingType.STEEL_PIPE));
     }
 
     @Override
@@ -33,7 +33,6 @@ public class BlockBoilerCasing extends VariantBlock<BlockBoilerCasing.BoilerCasi
 
     public enum BoilerCasingType implements IStringSerializable, IStateHarvestLevel {
 
-        BRONZE_PIPE("bronze_pipe", 2),
         STEEL_PIPE("steel_pipe", 3),
         TITANIUM_PIPE("titanium_pipe", 3),
         TUNGSTENSTEEL_PIPE("tungstensteel_pipe", 4),

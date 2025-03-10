@@ -322,8 +322,6 @@ public class JustEnoughItemsModule extends IntegrationSubmodule implements IModP
                 registry.addIngredientInfo(mte.getStackForm(), VanillaTypes.ITEM, mte.getDescription());
             }
         });
-        registry.addIngredientInfo(new ItemStack(MetaBlocks.BRITTLE_CHARCOAL), VanillaTypes.ITEM,
-                I18n.format("tile.brittle_charcoal.tooltip.1", I18n.format("tile.brittle_charcoal.tooltip.2")));
 
         // Refresh Ore Ingredients Cache
         GTRecipeOreInput.refreshStackCache();

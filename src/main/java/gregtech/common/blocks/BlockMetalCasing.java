@@ -22,7 +22,7 @@ public class BlockMetalCasing extends VariantBlock<BlockMetalCasing.MetalCasingT
         setHardness(5.0f);
         setResistance(10.0f);
         setSoundType(SoundType.METAL);
-        setDefaultState(getState(MetalCasingType.BRONZE_BRICKS));
+        setDefaultState(getState(MetalCasingType.STEEL_SOLID));
     }
 
     @Override
@@ -33,7 +33,6 @@ public class BlockMetalCasing extends VariantBlock<BlockMetalCasing.MetalCasingT
 
     public enum MetalCasingType implements IStringSerializable, IStateHarvestLevel {
 
-        BRONZE_BRICKS("bronze_bricks", 1),
         PRIMITIVE_BRICKS("primitive_bricks", 1),
         INVAR_HEATPROOF("invar_heatproof", 1),
         ALUMINIUM_FROSTPROOF("aluminium_frostproof", 1),

@@ -23,7 +23,7 @@ public class BlockFireboxCasing extends VariantActiveBlock<FireboxCasingType> {
         setHardness(5.0f);
         setResistance(10.0f);
         setSoundType(SoundType.METAL);
-        setDefaultState(getState(FireboxCasingType.BRONZE_FIREBOX));
+        setDefaultState(getState(FireboxCasingType.STEEL_FIREBOX));
     }
 
     @Override
@@ -34,7 +34,6 @@ public class BlockFireboxCasing extends VariantActiveBlock<FireboxCasingType> {
 
     public enum FireboxCasingType implements IStringSerializable, IStateHarvestLevel {
 
-        BRONZE_FIREBOX("bronze_firebox", 1),
         STEEL_FIREBOX("steel_firebox", 2),
         TITANIUM_FIREBOX("titanium_firebox", 2),
         TUNGSTENSTEEL_FIREBOX("tungstensteel_firebox", 3);

@@ -167,7 +167,6 @@ public class CommonProxy {
         registry.register(TREATED_WOOD_FENCE_GATE);
         registry.register(RUBBER_WOOD_DOOR);
         registry.register(TREATED_WOOD_DOOR);
-        registry.register(BRITTLE_CHARCOAL);
         registry.register(POWDERBARREL);
         registry.register(ITNT);
         registry.register(METAL_SHEET);
@@ -288,7 +287,6 @@ public class CommonProxy {
         registry.register(createItemBlock(TREATED_WOOD_FENCE, ItemBlock::new));
         registry.register(createItemBlock(RUBBER_WOOD_FENCE_GATE, ItemBlock::new));
         registry.register(createItemBlock(TREATED_WOOD_FENCE_GATE, ItemBlock::new));
-        registry.register(createItemBlock(BRITTLE_CHARCOAL, ItemBlock::new));
         registry.register(createItemBlock(RUBBER_LOG, ItemBlock::new));
         registry.register(createItemBlock(RUBBER_LEAVES, ItemBlock::new));
         registry.register(createItemBlock(RUBBER_SAPLING, ItemBlock::new));

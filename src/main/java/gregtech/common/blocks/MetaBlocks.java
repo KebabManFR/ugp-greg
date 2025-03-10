@@ -169,8 +169,6 @@ public class MetaBlocks {
     public static BlockPowderbarrel POWDERBARREL;
     public static BlockITNT ITNT;
 
-    public static BlockBrittleCharcoal BRITTLE_CHARCOAL;
-
     public static BlockColored METAL_SHEET;
     public static BlockColored LARGE_METAL_SHEET;
     public static BlockColored STUDS;
@@ -324,9 +322,6 @@ public class MetaBlocks {
         ITNT = new BlockITNT();
         ITNT.setRegistryName("itnt").setTranslationKey("itnt");
 
-        BRITTLE_CHARCOAL = new BlockBrittleCharcoal();
-        BRITTLE_CHARCOAL.setRegistryName("brittle_charcoal");
-
         METAL_SHEET = new BlockColored(net.minecraft.block.material.Material.IRON, "metal_sheet", 2.0f, 5.0f,
                 SoundType.METAL, EnumDyeColor.WHITE);
         METAL_SHEET.setRegistryName("metal_sheet");
@@ -365,7 +360,6 @@ public class MetaBlocks {
         Blocks.FIRE.setFireInfo(TREATED_WOOD_FENCE_GATE, 5, 20);
         Blocks.FIRE.setFireInfo(RUBBER_WOOD_DOOR, 5, 20);
         Blocks.FIRE.setFireInfo(TREATED_WOOD_DOOR, 5, 20);
-        Blocks.FIRE.setFireInfo(BRITTLE_CHARCOAL, 5, 5);
     }
 
     /**
@@ -494,7 +488,6 @@ public class MetaBlocks {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(TREATED_WOOD_FENCE_GATE), 0,
                 new ModelResourceLocation(Objects.requireNonNull(TREATED_WOOD_FENCE_GATE.getRegistryName()),
                         "inventory"));
-        registerItemModel(BRITTLE_CHARCOAL);
         registerItemModel(POWDERBARREL);
         registerItemModel(ITNT);
 

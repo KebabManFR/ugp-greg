@@ -22,7 +22,7 @@ public class BlockTurbineCasing extends VariantBlock<BlockTurbineCasing.TurbineC
         setHardness(5.0f);
         setResistance(10.0f);
         setSoundType(SoundType.METAL);
-        setDefaultState(getState(TurbineCasingType.BRONZE_GEARBOX));
+        setDefaultState(getState(TurbineCasingType.STEEL_GEARBOX));
     }
 
     @Override
@@ -33,7 +33,6 @@ public class BlockTurbineCasing extends VariantBlock<BlockTurbineCasing.TurbineC
 
     public enum TurbineCasingType implements IStringSerializable, IStateHarvestLevel {
 
-        BRONZE_GEARBOX("bronze_gearbox", 1),
         STEEL_GEARBOX("steel_gearbox", 2),
         STAINLESS_STEEL_GEARBOX("stainless_steel_gearbox", 2),
         TITANIUM_GEARBOX("titanium_gearbox", 2),
