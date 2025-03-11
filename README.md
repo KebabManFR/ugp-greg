@@ -18,7 +18,7 @@ GTCEu-UGP is still being developed.
 
 The differences between GTCEu and GTCEu-UGP are in the CHANGES file.
 
-Currently doing: Simplifying Ore Veins.
+Currently doing: Removing unnecessary ores.
 
 ## Credited Works
 Heating Coil Textures, Wooden Forms, World Accelerators, and the Extreme Combustion Engine are from the **[GregTech: New Horizons Modpack](https://www.curseforge.com/minecraft/modpacks/gt-new-horizons)**.
